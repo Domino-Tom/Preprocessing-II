@@ -126,6 +126,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 * {
   box-sizing: border-box;
 }
@@ -168,6 +172,28 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.nav-bar {
+  width: 100vw;
+  padding: 30px 0;
+  border-bottom: 2px dashed lightgray;
+}
+.nav-bar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.nav-bar nav h1 {
+  font-family: "Indie Flower", cursive;
+}
+.nav-bar nav ul {
+  font-size: 1.8rem;
+}
+.nav-bar nav ul a {
+  margin-right: 22.5px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +204,10 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .header .header-img {
+  width: 100%;
+  height: auto;
 }
 .home .content-section {
   margin: 30px 0;
@@ -224,4 +254,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  background: teal;
+  color: white;
 }
