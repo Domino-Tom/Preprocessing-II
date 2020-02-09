@@ -210,7 +210,12 @@ img {
   font-size: 1.8rem;
 }
 .nav-bar nav ul a {
+  display: inline-block;
   margin-right: 22.5px;
+  transition: all 0.3s ease;
+}
+.nav-bar nav ul a:hover {
+  transform: scale(1.2);
 }
 .footer {
   width: 100%;
