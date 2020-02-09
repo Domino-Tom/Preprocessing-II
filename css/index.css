@@ -172,10 +172,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}
 .nav-bar {
   width: 100vw;
   padding: 30px 0;
   border-bottom: 2px dashed lightgray;
+}
+@media (max-width: 500px) {
+  .nav-bar {
+    height: 15vh;
+    padding: 0;
+  }
 }
 .nav-bar nav {
   display: flex;
@@ -184,6 +195,13 @@ img {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .nav-bar nav {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
 }
 .nav-bar nav h1 {
   font-family: "Indie Flower", cursive;
@@ -205,9 +223,17 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .header {
+  padding-bottom: 15px;
+  border-bottom: 2px dashed lightgray;
+}
 .home .header .header-img {
   width: 100%;
   height: auto;
+  margin-bottom: 15px;
+}
+.home .header .header-info h1 {
+  padding-bottom: 15px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -226,9 +252,25 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -242,6 +284,11 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -250,6 +297,12 @@ img {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
@@ -262,6 +315,16 @@ img {
   font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
-  background: teal;
+  background: #17A2B8;
   color: white;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+  }
 }
